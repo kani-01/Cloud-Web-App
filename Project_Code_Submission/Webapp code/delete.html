@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content ="text/html; charset=UTF-8; width=device-width,initial-scale=1,user-scalable=yes" />
+  <title>Delete Page</title>
+</head>
+<body background="https://www.planwallpaper.com/static/images/desktop-wallpaper-to-personalize-computer-high-wallpaper-hd-desktop.jpg" alt="img" style="float:left;width:100%;height:100%;object-fit:cover;">
+        <h1 style="color:dodgerblue;" align="center"> 
+		Welcome kani</h1>
+
+  <h2 align="center">Delete Function</h2>
+
+<div style="background-color:gold" >
+<form action="deleting" method="post">
+
+<pre align="center">
+
+Enter Key to Delete	: <input type="text" id="deletekey" name="deletekey"><br>
+Enter Value to Delete	: <input type="text" id="deletevalue" name="deletevalue"><br>
+
+Entered Option	: <input type="text" id="option" name="option"><br>
+<button onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+</pre>
+</form>
+</div>
+
+<script>
+function myFunction() {
+    var txt;
+    if (confirm("Are you Sure You want to delete the data")) {
+        txt = "You pressed OK!";
+        document.getElementById('option').value = "yes";
+
+    } else {
+        txt = "You pressed Cancel!";
+        document.getElementById('option').value = "no";
+    }
+    document.getElementById("demo").innerHTML = txt;
+
+}
+</script>
+
+</body>
+</html>
